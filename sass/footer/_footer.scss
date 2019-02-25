@@ -108,7 +108,7 @@
 
 // To override Owl Carousel stuff
 .owl-prev {
-  background: url('../../assets/images/left-arrow.png') no-repeat !important;  
+  background: url('../assets/images/left-arrow.png') no-repeat !important;  
   cursor: pointer;
   height: 40px !important;
   outline:none;
@@ -122,7 +122,7 @@
 }
 
 .owl-next {
-  background: url('../../assets/images/right-arrow.png') no-repeat !important;  
+  background: url('../assets/images/right-arrow.png') no-repeat !important;  
   cursor: pointer;
   height: 40px !important;
   width: 23px !important;
