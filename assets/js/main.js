@@ -53,14 +53,14 @@
         switch(value) {
           case 1: 
           case 2:
-            $('#happy-face').prop('src', '../assets/images/sad-face.svg');            
+            $('#happy-face').prop('src', 'assets/images/sad-face.svg');            
             break;
           case 3:
-            $('#happy-face').prop('src', '../assets/images/neutral-face.svg');            
+            $('#happy-face').prop('src', 'assets/images/neutral-face.svg');            
             break;
           case 4:
           case 5:
-            $('#happy-face').prop('src', '../assets/images/happy-face.svg');            
+            $('#happy-face').prop('src', 'assets/images/happy-face.svg');            
             break;
           default:
             break; 
