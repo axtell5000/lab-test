@@ -1,0 +1,57 @@
+// Putting generic classes that can be used across site
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'metropolisregular', Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+button:focus {outline:0;}
+
+h3 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 2rem;
+  margin: 15px 0 0 0;
+}
+
+// to help in vertical align an absolute
+.pos-relative {
+  height: 100%;
+  position: relative;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+
+
+.no-gutter-fluid {
+  padding-right:0;
+  padding-left:0;
+}
+
+
+.padding-white {
+  background-color: $white;
+  padding: 80px 0;
+}
+
+@media screen and (max-width: 576px) {     
+  h3 {
+    font-size: 1.8rem;
+  }  
+}
+
+@media screen and (max-width: 768px) {
+  .padding-white {
+    padding: 0;
+  }
+
+  h3 {
+    font-size: 1.7rem; 
+  }
+
+}

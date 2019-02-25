@@ -1,0 +1,63 @@
+// For the iamge area
+
+.gal-image-holder {
+  display: block;  
+  position: relative;
+  height: calc(100% + 1px); // To fix the teeny rounding issue
+  width: calc(100% + 1px); // To fix the teeny rounding issue
+}
+
+
+.gal-text-wrapper {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.gal-text-holder-wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.gal-text-holder {
+  background: rgba(0, 0, 0, 0.3); 
+  display: table-cell;
+  text-align: center;
+  transition: 0.3s;
+  vertical-align: middle;
+  width: 100%;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0); 
+  }
+
+  h2 {
+    color: $lab-yellow;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 768px) {
+  .container-no-gutter {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .gal-text-holder h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .gal-text-holder {
+
+    h2 {
+      font-size: 0.9rem;
+    }
+  }
+}

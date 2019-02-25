@@ -1,0 +1,177 @@
+// Scss for the footer area
+.footer-back {
+  background: $menu-back;
+  height: 360px;
+  padding: 35px;
+  position: relative;
+}
+
+// Social icons area
+.social-area {
+  svg {
+    fill: $lab-yellow;
+  }
+}
+
+.social-spacing {
+  padding: 0 20px;
+}
+
+// Contact options area
+.yellow-mail-link {
+  position: relative;
+
+  &::before {
+    color: $footer-grey;
+    content: '|';
+    font-size: 1.5rem;
+    position: absolute;
+    left: -10px;
+    top: -2px;
+  }
+
+  &::after {
+    color: $footer-grey;
+    content: '|';
+    font-size: 1.5rem;   
+    right: -10px; 
+    position: absolute;
+    top: -2px;
+  }
+
+  a {
+    color: $lab-yellow;
+    font-size: 1.2rem;
+  }
+}
+
+.tel-link {
+  a {
+    color: $footer-grey;
+    font-size: 1.2rem;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+}
+
+// Awards area
+
+.awards-wrapper {
+  padding-top: 70px;
+  position: relative;
+}
+
+.awards-item-holder {
+  width: 100%;
+}
+
+.award-item {
+  padding: 0 15px;
+  text-align: center;
+  text-transform: uppercase;
+  
+  .award {
+    color: $footer-grey;
+    font-size: 0.75rem;
+  }
+
+  .win-year {
+    color: $lab-yellow;
+    font-size: 0.9rem;
+  }
+}
+
+
+// Sub footer
+
+.sub-footer-wrapper {
+  height: 100%;
+  position: relative;
+}
+.sub-footer-area {
+  bottom: 20px;
+  color: $footer-grey;
+  font-size: 0.75rem;
+  left: 0;
+  padding: 0 15px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+
+  a {
+    color:  $footer-grey;
+  }
+}
+
+// To override Owl Carousel stuff
+.owl-prev {
+  background: url('../../assets/images/left-arrow.png') no-repeat !important;  
+  cursor: pointer;
+  height: 40px !important;
+  outline:none;
+  position: absolute;
+  top: 3%;
+  left: -20px;
+  display: block !important;
+  width: 23px !important;
+  
+ 
+}
+
+.owl-next {
+  background: url('../../assets/images/right-arrow.png') no-repeat !important;  
+  cursor: pointer;
+  height: 40px !important;
+  width: 23px !important;
+  outline:none;
+  position: absolute;
+  top: 3%;
+  right: -22px;
+  display: block !important;
+}
+
+// media query
+
+@media screen and (min-width: 992px) {
+  .award-item {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  .yellow-mail-link {
+    padding: 20px 0;
+  }
+
+  .reordered-padding {
+    padding-top: 30px;
+  }
+
+  .awards-wrapper {
+    padding-top: 20px;
+  }
+
+  .award-item {
+    padding: 0 40px;
+
+    .award {
+      font-size: 0.9rem;
+    }
+  
+    .win-year {
+      font-size: 1rem;
+    }
+  }
+
+}
