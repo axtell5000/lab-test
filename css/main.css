@@ -7501,7 +7501,7 @@ textarea.parsley-error {
     color: #c9c9c9; }
 
 .owl-prev {
-  background: url("../assets/images/left-arrow.png") no-repeat !important;
+  background: url("../../assets/images/left-arrow.png") no-repeat !important;
   cursor: pointer;
   height: 40px !important;
   outline: none;
@@ -7512,7 +7512,7 @@ textarea.parsley-error {
   width: 23px !important; }
 
 .owl-next {
-  background: url("../assets/images/right-arrow.png") no-repeat !important;
+  background: url("../../assets/images/right-arrow.png") no-repeat !important;
   cursor: pointer;
   height: 40px !important;
   width: 23px !important;
