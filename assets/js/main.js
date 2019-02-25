@@ -1,7 +1,7 @@
 (function($) {
   $(document).ready(function(){ 
     
-    //FOOTER CAROUSEL
+    //HERO CAROUSEL
     $('#hero-area').owlCarousel({
       autoplay:true,
       autoplayTimeout:5000,
@@ -10,6 +10,15 @@
       loop: true,
       margin:0,
       nav: false
+    });
+
+    //Go through each carousel on the page
+    $('#hero-area').each(function() {
+      //Find each set of dots in this carousel
+      $(this).find('.owl-dot').each(function(index) {
+      //Add one to index so it starts from 1
+      $(this).attr('aria-label', index + 1);
+      });
     });
 
     //FOOTER CAROUSEL
